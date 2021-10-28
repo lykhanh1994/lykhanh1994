@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let sotiengui = parseInt(prompt('Nhập số tiền gửi ngân hàng với lãi xuất 5% trên năm; '));
+let sothanggui = parseInt(prompt('Nhập số tháng đã gửi vào ngân hàng: '));
+let tienlaithang = 0;
+let tongtienlai = tienlaithang;
+document.write('Số tiền gửi là : ' + sotiengui+ ' VND trong ' + sothanggui + ' tháng với lãi suất 5% trên năm.' + '<br>');
+for (let i =1; i <= sothanggui; i++) {
+    tienlaithang += ((sotiengui*5/100)/12);
+    tongtienlai += tienlaithang;
+    sotiengui += tienlaithang;
+}
+document.write('Số tiền hiện tại của bạn là: ' + sotiengui.toFixed(3) + '<br>');
+document.write('Số tiền lãi sau ' + sothanggui + ' tháng là: ' +tongtienlai.toFixed(3));
+</script>
+</body>
+</html>
+

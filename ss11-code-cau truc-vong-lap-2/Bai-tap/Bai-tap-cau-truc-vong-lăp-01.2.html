@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let t = parseInt(prompt('Nhập nhiệt độ: '));
+  while (t < 20 ||  t> 100) {
+      if (t < 20) {
+          alert("Xin vui lòng tăng nhiệt độ!");
+          t = parseInt(prompt('Nhập nhiệt độ: '));
+      } else if (t > 100) {
+          alert("Xin vui lòng giảm nhiệt độ!");
+          t = parseInt(prompt('Nhập nhiệt độ: '));
+      }
+  }
+  alert("Nhiệt độ ok");
+</script>
+</body>
+</html>
