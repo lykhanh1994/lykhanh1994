@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập điểm bài KT 1: '));
+    let b = parseFloat(prompt('Nhập điểm bài kiểm tra 2: '));
+    let c = parseFloat(prompt('Nhập điểm thi giữa kì: '));
+    let d = parseFloat(prompt('Nhập điểm thi cuối kì: '));
+    let TBM = ((a + b + c*2 + d*3)/7);
+    if (TBM >= 8) {
+        alert('Xếp lọa Giỏi');
+    } else if (TBM >= 6.5) {
+        alert('Xếp loại Khá');
+    } else if (TBM >= 5.5) {
+        alert('Xếp loại Trung Bình');
+    } else if (TBM >= 4.5) {
+        alert('Xếp loại Yếu');
+    } else {
+        alert('Xếp loại Kém');
+    }
+</script>
+</body>
+</html>

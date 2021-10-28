@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a = parseFloat(prompt('Nhập giá a'));
+let b = parseFloat(prompt('Nhập giá b'));
+let c = parseFloat(prompt('Nhập giá c'));
+let deta = (b*b - 4*a*c);
+if (deta < 0) {
+    alert('Phương trình vô nghiệm.');
+} else if (deta == 0) {
+    alert('Phương trình có nghiệm kép x1 = x2 = ' + -b/2*a);
+} else {
+    alert('Phương trình có 2 nghiệm phân biệt: x1 = ' + ((-b-Math.sqrt(deta))/2*a));
+    alert( 'x2 = ' + ((-b+Math.sqrt(deta))/2*a));
+    document.write('phương trình có 2 nghiệm phân biệt: x1 = ' + (-b-Math.sqrt(deta))/2*a);
+}
+</script>
+</body>
+</html>
