@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let thunhap = parseInt(prompt('Mức thu nhập/tháng: '))
+if (thunhap < 6000000) {
+    alert('Không cần phải đóng thuế thu nhập cá nhân.');
+} else if (thunhap <= 9000000) {
+    alert('Thuế thu nhập là: ' + thunhap*2/100);
+} else if (thunhap <= 12000000) {
+    alert('Thuế thu nhập cá nhân là: ' + thunhap*3/100);
+} else {
+    alert('Thuế thu nhập cá nhân là: ' + thunhap*5/100);
+}
+
+</script>
+</body>
+</html>
+

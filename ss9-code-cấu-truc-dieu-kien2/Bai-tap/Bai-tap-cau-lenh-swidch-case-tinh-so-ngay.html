@@ -5,21 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<form>
     <table>
         <tr>
             <td>
-                <input type="text" id="month">
+                <label><input type="text" id="month"></label>
             </td>
             <td>
-<button onclick="day">Tính số ngày</button>
+<button onclick="day()">Tính số ngày</button>
             </td>
         </tr>
     </table>
-</form>
 <script>
     function day() {
-let numberday = document.getElementById('month');
+let numberday = parseInt(document.getElementById('month').value);
 switch (numberday) {
     case 1:
     case 3:

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // số tiền vây ban đầu là 50 triệu, cho vay trong vòng 10 tháng với lãi xuất là 15 %, trả trong vòng 10 tháng
+let tienvay = 50000000;
+let tiengoctrahangthang = 5000000;
+let thangtratienlai = parseInt(prompt('Nhập tháng trả tiền lãi: '));
+switch (thangtratienlai) {
+    case 1:
+        alert('tiền phải nộp cho ngân hàng là: ' + (tienvay*15/100 + tiengoctrahangthang));
+        break;
+    case 2:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang)*15/100 + tiengoctrahangthang));
+        break;
+    case 3:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*2)*15/100 + tiengoctrahangthang));
+        break;
+    case 4:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*3)*15/100 + tiengoctrahangthang));
+        break;
+    case 5:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*4)*15/100 + tiengoctrahangthang));
+        break;
+    case 6:
+        alert('tiền phải nộp cho ngân hàng là: ' +((tienvay-tiengoctrahangthang*5)*15/100 + tiengoctrahangthang));
+        break;
+    case 7:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*6)*15/100 + tiengoctrahangthang));
+        break;
+    case 8:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*7)*15/100 + tiengoctrahangthang));
+        break;
+    case 9:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*8)*15/100 + tiengoctrahangthang));
+        break;
+    case 10:
+        alert('tiền phải nộp cho ngân hàng là: ' + ((tienvay-tiengoctrahangthang*9)*15/100 + tiengoctrahangthang));
+        break;
+}
+
+</script>
+</body>
+</html>
+
