@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <td></td>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="Tiennhapvao">
+            </td>
+            <td>
+                <select name="" id="from">
+                    <option value="vn">VND</option>
+                    <option value="dlm">USD</option>
+                    <option value="y">YEN</option>
+                </select>
+            </td>
+            <td></td>
+            <td>
+                <select name="" id="to">
+                    <option value="vn">VND</option>
+                    <option value="dlm">USD</option>
+                    <option value="y">YEN</option>
+                </select>
+            </td>
+            <td></td>
+            <td>
+                <button onclick="chuyển()">Convert</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    function chuyển() {
+        let nhapvao = (document.getElementById('Tiennhapvao').value);
+        let from = (document.getElementById('from').value);
+        let to = (document.getElementById('to').value)
+        if (from == to) {
+            alert(nhapvao);
+        }
+        if (from == "vn" && to == "dlm") {
+            alert(nhapvao / 25000);
+        }
+        if (from == "vn" && to == "y") {
+            alert(nhapvao / 20000);
+        }
+        if (from == "dlm" && to == "vn") {
+            alert(nhapvao*25000);
+        }
+        if (from == "dlm" && to == "y") {
+            alert(nhapvao*115);
+        }
+        if (from == "y" && to == "vn") {
+            alert(nhapvao*200);
+        }
+        if (from == "y" && to == "dlm") {
+            alert(nhapvao/115);
+        }
+    }
+</script>
+
+</body>
+</html>
