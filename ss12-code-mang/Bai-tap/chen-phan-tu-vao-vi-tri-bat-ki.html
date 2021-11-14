@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n = parseInt(prompt('Nhập số lượng phần tử: '));
+    let i=0
+    a = parseInt(prompt("Nhap phan tu " + i));
+    document.write(a)
+    for (i=0; i < n; i++) {
+        a = parseInt(prompt("Nhap phan tu " + i));
+        document.write(a)
+        if (i == 0 || i == (n - 1)) {
+            alert(" Vị trí này không thể chèn vào ");
+        } else {
+            m = parseInt(prompt("Nhap phan tu can chen lai vao:  "));
+            a = a.splice(a[i], 0, m);
+        }
+    }
+    document.write(a);
+
+</script>
+</body>
+</html>

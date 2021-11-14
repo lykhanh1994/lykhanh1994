@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap mang</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập vào 1 chuỗi các khí tự: ")
+    let CHUHOA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let chuthuong = "abcdefghijklmnopqrstuvwxyz"
+    let ketqua= []
+    for ( let i=0; i<chuoi.length; i++) {
+    if (CHUHOA.indexOf(chuoi[i]) !== -1) {
+        ketqua.push(chuoi[i].toLowerCase());
+    } else if (chuthuong.indexOf(chuoi[i]) !== -1) {
+       ketqua.push(chuoi[i].toUpperCase());
+    } else {
+        ketqua.push(chuoi[i]);
+    }
+    }
+    alert(ketqua.join(""));
+
+</script>
+</body>
+</html>
