@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let max = 0;
+    let VT = 0;
+    for (let i = 0; i<10; i++) {
+        a[i] = parseInt(prompt('Nhập số vào mảng: '));
+    }
+    document.write("a =[ "+ a + "]<br>");
+    for (let i = 0; i < a.length; i++) {
+        if (max < a[i]) {
+            max = a[i];
+            VT = i;
+        }
+    }
+document.write('Phần tử có giá trị lớn nhất là ' + max + " tại vị trí + a["+VT+"]" );
+</script>
+</body>
+</html>

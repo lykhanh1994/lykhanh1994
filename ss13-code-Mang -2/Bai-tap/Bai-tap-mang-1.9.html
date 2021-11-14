@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+    // Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+    //    Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.
+
+
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i<10; i++) {
+        a[i] = parseInt(prompt('Nhập số vào mảng a: '));
+    }
+    document.write("a =[ "+ a + "]<br>");
+    for (let i = 0; i<10; i++) {
+        b[i] = parseInt(prompt('Nhập số vào mảng b: '));
+    }
+    document.write("b =[ "+ b + "]<br>");
+    document.write("c =[ "+ a.concat(b) + "]<br>");
+
+    /*
+    cách 2
+     for (let i = 0; i < 10; i++) {
+         let a = Number(prompt("Nhập số vào mảng 1"))
+         a.push(a)
+     }
+     for (let j = 0; j < 10; j++) {
+         let b= Number(prompt("Nhập số vào mảng 2"))
+         b.push(b)
+     }
+     document.write("a = ["+a+"] <br>")
+     document.write("Mb= ["+b+"] <br>")
+     c =a;
+     for (let i=0; i<b.lenght){
+       c.push(b[i])
+     }
+     document.write("c= ["+c+"]<br>")
+ }
+     */
+
+
+</script>
+</body>
+</html>

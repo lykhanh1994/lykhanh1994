@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let solonhon10 = [];
+    for (let i = 0; i<10; i++) {
+        a[i] = parseInt(prompt('Nhập số vào mảng: '));
+    }
+    document.write("a =[ "+ a + "]<br>");
+    for ( let i=0; i < a.length; i++){
+        if (a[i] >10){
+            solonhon10.push(a[i]);
+        }
+    }
+    document.write("mảng số lớn hơn 10 là: ["+ solonhon10 +"]<br>");
+</script>
+</body>
+</html>
+

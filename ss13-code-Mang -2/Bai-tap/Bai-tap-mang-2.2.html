@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    for (let i = 0; i<5; i++) {
+        a[i] = parseInt(prompt('Nhập số vào mảng: '));
+    }
+    document.write("a =[ "+ a + "]<br>");
+  b = a.reverse();
+  document.write("Mang đảo ngược: b = ["+ b +"]<br>" );
+
+  /*
+  cách 2:
+ let a = [];
+    let b = 0;
+    let c = a.lenght-1;
+    for (let i = 0; i<5; i++) {
+        a[i] = parseInt(prompt('Nhập số vào mảng: '));
+    }
+    document.write("a =[ "+ a + "]<br>");
+    while (b<c) {
+    let d = a[b];
+    a[b]=a[c];
+    a[c] = d
+    b++;
+    c--;
+    }
+     document.write(a);
+
+   */
+</script>
+</body>
+</html>
+

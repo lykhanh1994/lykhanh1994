@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+
+    let a = prompt("Nhập mảng a: ");
+    let b = prompt("Nhập mảng b: ");
+    let sosanh = true
+    document.write("a = ["+ a +"]<br>");
+    document.write("b = ["+ b +"]<br>");
+    if (a.length != b.length){
+        alert('Hai chuỗi không giống nhau.');
+    } else {
+        for (let i=0; i<a.length; i++){
+            for (let j=0; j<b.length; j++){
+              if (a[i] == b[j]) {
+                  sosanh= true;
+              } else {
+                  sosanh = false;
+              }
+            }
+        }
+        if(sosanh==false){
+            alert("Hai chuỗi không giông nhau.");
+        }else {
+            alert("Hai chuỗi giống nhau.");
+        }
+    }
+</script>
+</body>
+</html>
+
+
