@@ -8,7 +8,36 @@
 <script>
    // Viết chương trình nhập vào một mảng ký tự,
    //     tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
-   
+
+   let a= [];
+   for (let i=0; i<10; i++) {
+       a[i] = prompt('Nhập mảng a: ');
+   }
+   document.write("a =[ "+ a + "]<br>");
+   for (let i=0; i<a.length; i++){
+       if(a[i] === '-') {
+           a[i] = "_";
+       }
+   }
+   document.write("after ["+ a.join(' ')+"]");
+
+
+   /*
+   let Fix = [];
+     for (let i=0; i<a.length ; i++){
+            for (let j=0; j<a[i].length; j++){
+                if(a[i][j] == "-"){
+                    a[i][j] = "_"
+                    Fix.push("_")
+                }else{
+                    Fix.push(a[i][j])
+                }
+
+            }
+        }
+        document.write("Mảng sửa gồm ["+Fix.join("")+"]<br>")
+    }
+    */
 </script>
 </body>
 </html>
